@@ -1,0 +1,569 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Poor+Story&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    zoom: 1;
+    position:relative;
+    z-index:1;
+    margin:0;
+    padding:0;
+    height:100%;
+}
+
+.footer-section {
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: 100;
+    font-size: 10pt;
+    text-align: center;
+    background-color: #404040;
+    color: white;
+    margin-top: 2em;
+    padding: 2%;
+}
+
+.footer-section hr {
+    background-color: #BFBFBF;
+    height: 1px;
+    border: 0;
+}
+
+.nav-container {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 2;
+	border-bottom: 1px solid #BFBFBF;
+}
+
+.nav-container .nav-logo {
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 30px;
+    display: block;
+    width: 15%;
+    color: #333;
+    text-decoration: none;
+    text-align: center;
+}
+
+.nav-container .nav-login {
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 20px;
+    display: block;
+    right: 0;
+    width: 10%;
+    color: #333;
+    text-decoration: none;
+    text-align: center;
+}
+
+.nav-container .nav-login img {
+	vertical-align: middle;
+}
+
+.nav-container ul li {
+    list-style: none;
+}
+
+.nav-item {
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: #333;
+    position: relative;
+}
+
+.sub-menuLink {
+    font-family: 'Do Hyeon', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    display: block;
+}
+
+.main-menu {
+    margin-top: 30px;
+    height: 60px;
+}
+
+
+.nav-container .nav-item::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 4px;
+    background: #f1c40f;
+    transition: all .5s ease-out;
+}
+
+.nav-container .nav-item:hover::after {
+    width: 100%;
+}
+
+.chooseMenuZone {
+	font-family: 'Do Hyeon', sans-serif;
+	text-align: center;
+	margin: 5% 10%;
+	padding: 9%;
+	height: 450px;
+	border: 10px solid white;
+	background-color: #DEEBF7;
+	box-shadow: 2px 2px 2.5px 2.5px rgb(217, 217, 217);
+}
+
+.food {
+	color: #5B9BD5;
+}
+
+.btnStart {
+	font-family: 'Do Hyeon', sans-serif;
+	font-size: 15pt;
+	margin: 1%;
+	width: 18%;
+	height: 50px;
+	background-color: #404040;
+	color: white;
+	border-radius: 15%;
+	outline: 0;
+	border: 0;
+	transition: 0.5s;
+}
+
+.btnSelect {
+	font-family: 'Do Hyeon', sans-serif;
+	font-size: 15pt;
+	width: 18%;
+	height: 50px;
+	background-color: #404040;
+	color: white;
+	border-radius: 15%;
+	outline: 0;
+	border: 0;
+	transition: 0.5s;
+}
+
+.btnStart:hover {
+	background-color: white;
+	color: black;
+	border: #404040 3px solid;
+}
+
+.btnSelect:hover {
+	background-color: white;
+	color: black;
+	border: #404040 3px solid;
+}
+
+.loginZone {
+    font-family: 'Do Hyeon', sans-serif;
+    border: #A6A6A6 solid 0.7px;
+    background-color: white;
+    padding: 4%;
+    width: 30%;
+    height: 300px;
+    margin: 10% 35% 10%;
+    box-shadow: 5px 5px rgb(217, 217, 217);
+}
+
+.loginForm .input {
+	font-family: 'Noto Sans KR', sans-serif;
+    width: 100%;
+    height: 35px;
+    padding: 5px;
+    margin: 5px;
+    border: #A6A6A6 solid 0.5px;
+}
+
+.loginForm .inputLogin {
+    font-weight: 700;
+    width: 100%;
+    height: 35px;
+    margin: 7px;
+    border: #404040 solid 0.5px;
+    background: #404040;
+    color: white;
+    transition: 0.5s;
+}
+
+.inputLogin:hover {
+    background-color: #595959;
+}
+
+.recommendForm {
+	font-family: 'Do Hyeon', sans-serif;
+	font-size: 25pt;
+	color: #9B344A;
+	margin: 3% 8%;
+	padding: 2%;
+}
+
+.recommendForm hr {
+	background-color: #454545;
+	height: 2px;
+	border:0;
+}
+
+.btnEateryPlus {
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 10pt;
+	background-color: #404040;
+	color: white;
+	margin: 0;
+	width: 120px;
+	height: 30px;
+	border-radius: 8%;
+	transition: 0.5s;
+}
+
+.btnEateryPlus:hover {
+	background-color: white;
+	color: black;
+}
+
+.eateryPlusZone {
+	display: inline-block;
+	float: right;
+	padding-right: 2%;
+}
+
+.eateryDiv {
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 13pt;
+	min-height: 250px;
+	padding: 2%;
+	width: 97%;
+	height: auto;
+}
+
+.eateryDiv a {
+	color: black;
+	text-decoration: none;
+}
+
+.eateryDiv a table {
+	width: 100%;
+	height: auto;
+	margin-bottom: 1%;
+}
+
+.eateryDiv a table {
+	border: #444444 solid 2px;
+	padding: 2% 1%;
+}
+
+.selectBox {
+	font-family: 'Do Hyeon', sans-serif;
+	font-size: 20pt;
+	padding: 1%;
+	margin: 0% 1%;
+	border: 0;
+}
+
+.btnPlus {
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 13pt;
+	background-color: #F2F2F2;
+    border-radius: 10%;
+	border: 0;
+	outline: 0;
+	width: 150px;
+	height: 40px;
+	float: right;
+	transition: 0.5s;
+}
+
+.btnPlus:hover {
+	background-color: #414141;
+	color: white;
+}
+
+.eateryPlusForm {
+	margin: 5% 25%;
+	padding: 10% 5%;
+	border: 3px solid #404040;
+	border-radius: 5%;
+	box-shadow: 2px 2px 2.5px 2.5px rgb(217, 217, 217);
+}
+
+.eateryPlusTable {
+	width: 100%;
+	text-align: center;
+}
+
+.inputText {
+	font-family: 'Do Hyeon', sans-serif;
+	font-size: 15pt;
+	text-align: center;
+	width: 95%;
+	height: 48px;
+	border: #404040 solid 1.5px;
+	border-radius: 1%;
+	margin: 5px;
+}
+
+.inputTextLocation {
+	font-family: 'Do Hyeon', sans-serif;
+	font-size: 15pt;
+	text-align: center;
+	width: 97%;
+	height: 48px;
+	border: #404040 solid 1.5px;
+	border-radius: 1%;
+	margin: 5px;
+}
+
+.btnPlus {
+	font-family: 'Do Hyeon', sans-serif;
+	font-size: 15pt;
+	width: 97%;
+    height: 42px;
+    margin: 8px;
+    border-radius: 1%;
+}
+
+.myPageForm {
+	font-family: 'Do Hyeon', sans-serif;
+	font-size: 15pt;
+	min-height: 500px;
+	padding: 3% 10%;
+}
+
+.mypageForm h3 {
+	padding: 2% 3%;
+}
+
+.logoutDiv {
+	text-align: center;
+}
+
+.logoutDiv a {
+	font-family: 'Do Hyeon', sans-serif;
+	font-size: 13pt;
+	text-decoration: none;
+	color: black;
+	width: 100px;
+	transition: 0.5s;
+}
+
+.logoutDiv a:hover {
+	text-decoration: underline;
+}
+
+.reviewDiv {
+	font-family: 'Do Hyeon', sans-serif;
+	margin: 3% 8%;
+	padding: 2%;
+}
+
+.reviewDiv h2 {
+	font-size: 23pt;
+}
+
+.plusReview {
+	font-family: 'Noto Sans KR', sans-serif;
+	padding: 1%;
+	margin: 1% 3%;
+	text-align: center;
+	border-radius: 1%;
+	box-shadow: 1px 1px 1.5px 1.5px rgb(217, 217, 217);
+}
+
+.plusReview h3 {
+	 color: #825446; 
+	 font-family: 'Do Hyeon', sans-serif;
+	 font-size: 20pt;
+	 margin-top: 2%;
+}
+
+.textareaDiv {
+	border: #BBBCBD 1px solid;
+	width: 70%;
+	height: 150px;
+	margin:0 auto;
+}
+
+.textareaDiv textarea {
+	font-family: 'Noto Sans KR', sans-serif;
+	resize: none;
+	border: 0;
+	outline: 0;
+	width: 100%;
+	height: 123px;
+	padding: 1%;
+}
+
+.textareaDiv span {
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 9pt;
+	float: left;
+	padding: 0% 1%;
+	color: #404040;
+}
+
+.reviewDiv input {
+	font-family: 'Noto Sans KR', sans-serif;
+	font-weight: bold;
+	font-size: 11pt;
+	width: 70%;
+    height: 30px;
+    background-color: #976251;
+    border: 0;
+    color: white;
+    margin-bottom: 3%;
+}
+
+#rating {
+	font-family: 'Noto Sans KR', sans-serif;
+	font-weight: bold;
+	font-size: 15pt;
+	color: #404040;
+	display: inline-block;
+}
+
+.reviewDiv p a {
+	font-family: 'Do Hyeon', sans-serif;
+	text-decoration: none;
+	color: black;
+}
+
+.reviewDiv p a img {
+	width: 35px;
+	height: auto;
+}
+
+#star_grade a.on {
+	width: 35px;
+	height: auto;
+	content: url('../picture/filledStar.png');
+}
+
+.reviewDiv hr {
+	background-color: #404040;
+	border: #404040;
+}
+
+.reviewInfo {
+	font-family: 'Do Hyeon', sans-serif;
+	font-size: 14pt;
+	width: 100%;
+	color: #825446;
+}
+
+.othersReview {
+	font-family: 'Noto Sans KR', sans-serif;
+	padding: 1%;
+	margin: 1% 3%;
+	text-align: center;
+	border-radius: 1%;
+	box-shadow: 1px 1px 1.5px 1.5px rgb(217, 217, 217);
+}
+
+
+.othersReview h3 {
+	 color: #825446; 
+	 font-family: 'Do Hyeon', sans-serif;
+	 font-size: 20pt;
+	 margin-top: 2%;
+}
+
+.reviewTable {
+	border: 1.5px solid #404040;
+	padding: 1%;
+	margin: 0 auto 1% auto;
+	width: 70%;
+	text-align: left;
+}
+
+.reviewTable .date {
+	 padding: 2% 2% 0% 2%;
+	 color: #7F7F7F;
+	 text-align: right;
+}
+
+.reviewTable .content {
+	padding-top: 2%;
+}
+
+.btnOrder {
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 12pt;
+	margin: 0 0.5% 1% 0.5%;
+	background-color: white;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+.eateryApproveDiv {
+	width: 100%;
+	min-height: 370px;
+}
+
+.eateryPlusList {
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 10pt;
+	border-collapse: separate;
+	border-spacing: 1px; 
+	text-align: center; 
+	line-height: 1.5; 
+	margin: 3% 10%;
+	width: 80%;
+}
+
+.eateryPlusList th { 
+	padding: 10px; 
+	font-weight: bold; 
+	vertical-align: middle; 
+	color: #fff; 
+	background: #ce4869;
+}
+
+.eateryPlusList td {
+	padding: 10px; 
+	vertical-align: top; 
+	border-bottom: 1px solid #ccc; 
+	background: #eee;
+	vertical-align: middle;
+}
+
+.inputSelect {
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 10pt;
+	width: 40%;
+	height: 30px;
+	background-color: #eee;
+	border: 0;
+	outline: 0;
+	vertical-align: middle;
+	text-align-last: center;
+	margin-right: 6%;
+}
+
+.btnSubmit {
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 10pt;
+	background-color: #404040;
+	color: white;
+	margin: 0;
+	width: 60px;
+	height: 30px;
+	border-radius: 10%;
+	transition: 0.5s;
+}
+
+.btnSubmit:hover {
+	background-color: white;
+	color: black;
+}
